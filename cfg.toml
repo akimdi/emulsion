@@ -1,0 +1,75 @@
+[bindings]
+img_next = ["right", "pagedown"]
+img_prev = ["left", "pageup"]
+img_orig = ["o"]
+
+# https://github.com/ArturKovacs/emulsion/pull/164#issuecomment-751374609
+zoom_in = ["a", "up", "add"]
+zoom_out = ["s", "down", "subtract"]
+pan_left = ["h"]
+pan_right = ["l"]
+pan_up = ["k"]
+pan_down = ["j"]
+img_fit_best = ["b"]
+# img_del = ["x", "delete"]
+pan = ["space"]
+play_anim = ["alt+a", "alt+v"]
+play_present = ["p"]
+play_present_rnd = ["alt+p"]
+toggle_fullscreen = ["f", "F11"]
+img_copy = ["ctrl+C"]
+escape = ["q", "Escape"]
+
+[[commands]]
+# input = ["alt+g"]
+input = ["g"]
+program = "gimp"
+args = ["${img}"]
+
+[[commands]]
+input = ["x", "delete"]
+program = "trash-put"
+args = ["${img}"]
+
+[[commands]]
+input = ["v"]
+program = "vimiv"
+args = ["${img}"]
+
+[[commands]]
+input = ["n"]
+program = "nomacs"
+args = ["${img}"]
+
+[[commands]]
+input = ["t"]
+program = "krita"
+args = ["${img}"]
+
+[updates]
+check_updates = false
+
+[title]
+displayed_folders = 1
+show_program_name = true
+
+[window]
+# https://github.com/ArturKovacs/emulsion/issues/147
+# https://github.com/ArturKovacs/emulsion/issues/178
+start_fullscreen = false
+show_bottom_bar = true
+use_last_window_area = false
+
+# warning: spurious network error (2 tries remaining): [28] Timeout was reached (download of `tiff v0.6.1` failed to transfer more than 10 bytes in 30s)
+# warning: spurious network error (2 tries remaining): [28] Timeout was reached (failed to download any data for `directories-next v2.0.0` within 30s)
+# https://github.com/rust-lang/cargo/issues/6513#issuecomment-723216971
+#
+# https://github.com/ArturKovacs/emulsion/issues/166#issuecomment-753674101
+# https://github.com/ArturKovacs/emulsion/issues/163#issuecomment-767870461
+# https://github.com/ArturKovacs/trash-rs/commit/5dfe5dc0beaa29a537808d017e5852ad976644e4
+# https://github.com/ArturKovacs/emulsion
+# https://github.com/ArturKovacs/trash-rs/releases
+# https://github.com/ArturKovacs/trash-rs/commits/master
+# https://github.com/rust-lang/cargo/issues/6513#issuecomment-723216971
+# https://github.com/webpro/awesome-dotfiles/pull/53
+# https://github.com/webpro/awesome-dotfiles/pull/55#issuecomment-774675496
